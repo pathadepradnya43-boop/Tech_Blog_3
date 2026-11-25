@@ -1,0 +1,234 @@
+TECH_BLOG_03: Web Architecture Basics
+
+
+Understanding How Websites Work Behind the Scenes
+
+ 1) Introduction to Web Architecture
+
+Web architecture explains how different parts of a website work together. It includes frontend, backend and databases.
+Whenever we open a website, many processes happen behind the scenes to display the information we need.
+
+
+ 2) Frontend
+
+Frontend is the part of a website that users can see and interact with.
+
+Main technologies:
+- HTML – Creates the structure of a webpage.
+- CSS – Adds colours, styles and designs.
+- JavaScript – Makes websites interactive.
+
+Example: Buttons, images, menus and login forms.
+
+
+ 3) Backend
+
+Backend is the part of a website that works behind the scenes. It handles requests, processes information and communicates with databases.
+
+Example: When you log in, the backend checks your login details.
+
+Popular technologies include Python, Java, PHP and Node.js.
+
+
+ 4) Database
+
+A database stores and manages website information.
+
+Example: User details, passwords (stored securely), products and orders.
+
+Popular databases include MySQL, MongoDB and PostgreSQL.
+
+
+ 5) How Does a Web Application Work?
+
+A web application generally works like this:
+
+1. The user opens a website.
+2. The frontend displays the webpage.
+3. The user enters information.
+4. The browser sends a request to the backend.
+5. The backend processes the request.
+6. The database provides the required information.
+7. The server sends a response to the browser.
+
+
+ 6) HTTP and HTTPS
+
+HTTP: A protocol that allows browsers and servers to communicate.
+
+HTTPS: The secure version of HTTP that uses TLS encryption to protect communication.
+
+Example: HTTPS helps protect your login information while it travels across the internet.
+
+
+ 7) Web Requests and Responses
+
+A request is a message sent by the browser to a server.
+A response is the message returned by the server.
+
+Common HTTP methods:
+- GET – Retrieve information.
+- POST – Send information.
+- PUT – Replace information.
+- PATCH – Update information.
+- DELETE – Delete information.
+
+
+ 8) HTTP Status Codes
+
+Status codes tell us what happened when a server received a request.
+
+- 200 – Request successful.
+- 201 – Resource created.
+- 301 – Permanently moved.
+- 400 – Bad request.
+- 401 – Unauthorized.
+- 403 – Access forbidden.
+- 404 – Page not found.
+- 500 – Internal server error.
+
+
+ 9) Cookies
+
+Cookies are small pieces of information stored in the browser.
+Websites use cookies to remember login sessions, preferences and shopping cart details.
+
+Example: A website remembers that you are logged in when you visit it again.
+
+Important cookie attributes:
+- Secure – Sends cookies only over HTTPS.
+- HttpOnly – Prevents JavaScript from reading the cookie.
+- SameSite – Controls cookies in cross-site requests.
+
+
+ 10) Sessions
+
+Sessions help websites remember users while they move between different pages.
+
+Example: After logging into Instagram, you can open your profile without logging in again on every page.
+
+A session ID is often stored in a browser cookie and used by the server to identify the session.
+
+
+ 11) Same-Origin Policy (SOP)
+
+SOP is a browser security rule that restricts webpages from accessing certain resources belonging to another origin.
+
+An origin consists of:
+- Protocol
+- Domain
+- Port
+
+Example: HTTPS and HTTP versions of the same website are considered different origins.
+
+SOP helps protect private website information.
+
+
+ 12) CORS
+
+CORS stands for Cross-Origin Resource Sharing.
+It allows a server to specify which other origins can access its resources.
+
+Example: A frontend running on port 3000 wants to communicate with a backend running on port 5000.
+
+CORS helps the server control whether the browser can allow that access.
+
+
+ 13) APIs
+
+API stands for Application Programming Interface.
+It allows two different applications or software components to communicate.
+
+Example: A weather application uses an API to get temperature and weather information.
+
+Common types include REST, GraphQL and SOAP.
+
+
+ 14) Authentication and Authorization
+
+Authentication: Checks who you are.
+
+Example: Logging in using a username and password.
+
+Authorization: Checks what you are allowed to access.
+
+Example: A student can view marks, but only a teacher can update them.
+
+
+ 15) DNS (Domain Name System)
+
+DNS converts domain names into IP addresses.
+
+Example: When you type google.com, DNS helps your browser find the correct server address.
+
+In simple words, DNS works like the phonebook of the internet.
+
+
+ 16) Web Hosting and Deployment
+
+Web hosting provides a place where website files and applications can run.
+Deployment means making a website available for users.
+
+Popular platforms include:
+- GitHub Pages
+- Vercel
+- Netlify
+- AWS
+
+Example: You create a portfolio website and publish it using GitHub Pages.
+
+
+ 17) Caching
+
+Caching means temporarily storing frequently used information so it can load faster next time.
+
+Example: Your browser stores website images so they don't need to be downloaded every time you visit.
+
+Caching improves website speed and reduces server workload.
+
+
+ 18) CDN (Content Delivery Network)
+
+A CDN is a network of servers located in different places around the world.
+
+It delivers website content from a server closer to the user.
+
+Example: A user in India can receive website images from a nearby CDN server instead of a distant main server.
+
+This improves loading speed.
+
+
+ 19) Common Web Security Vulnerabilities
+
+Some common web application security issues include:
+
+1. SQL Injection: Attackers manipulate database queries through unsafe input.
+2. Cross-Site Scripting (XSS): Attackers inject malicious scripts into webpages.
+3. Cross-Site Request Forgery (CSRF): Tricks a logged-in user's browser into sending unwanted requests.
+4. Broken Authentication: Weak login or session management can allow unauthorized access.
+5. Broken Access Control: Users access information or features they are not allowed to use.
+
+Basic prevention includes input validation, secure authentication and proper access controls.
+
+
+ 20) What Happens When You Enter a URL in Your Browser?
+
+When you type a website address into your browser, several steps happen:
+
+1. The browser processes the URL.
+2. DNS finds the server's IP address.
+3. The browser establishes a connection with the server.
+4. A secure TLS connection is established for HTTPS.
+5. The browser sends an HTTP request.
+6. The server processes the request.
+7. The server sends an HTTP response.
+8. The browser loads and displays the webpage.
+
+This is how websites work behind the scenes.
+
+
+21) Conclusion
+
+Web architecture is the foundation of modern websites and web applications.
+Understanding frontend, backend, databases, HTTP, cookies, sessions, SOP and CORS helps us understand how websites communicate and protect information.
+These concepts are also important for anyone interested in web development and cybersecurity.
